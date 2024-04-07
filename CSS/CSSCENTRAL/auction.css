@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.auction-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.auctions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.auction {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.auction img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-name, .current-bid {
+    margin: 5px 0;
+}
+
+.bid-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bid-button:hover {
+    background-color: #45a049;
+}
+
+.start-auction-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.start-auction-button:hover {
+    background-color: #007B9A;
+}

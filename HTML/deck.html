@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/deck.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <title>Your Cards</title>
+</head>
+<body>
+    <nav class="NavBarContainer">
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">The Shop</a></li>
+                <li><a href="trade.html">Trading Center</a></li>
+                <li><a href="profile.html">Your Profil</a></li>
+                <li><a href="deck.html">Your deck</a></li>
+              </div>
+            </div>
+          </div>
+          <a class="LogoNav" href="index.html">
+            <img src="../ASSETS/HPlogo.png" alt="" class="LogoHP">
+        </a>
+        <div class="LoginNav">
+            <img src="../ASSETS/pfp.png" alt="logo" class="LogoLogin">
+        </div>
+    </nav>
+    <div class="text-banner">
+        Special Promotion!
+    </div>
+    <div class="header">
+        <input type="text" id="searchBar" placeholder="Search cards...">
+        <button id="filterButton">Filter</button>
+    </div>
+
+    <div class="card-container">
+        <div id="chars-container" class="card" >
+            <button class="favorite-button" onclick="toggleFavorite(this)">Favorite</button>
+        </div>
+        <div class="card">
+            <img src='" + newCharsArr[i].image + "'>
+            <header class='char-header'>" + newCharsArr[i].name + "</header>
+            <button class="favorite-button" onclick="toggleFavorite(this)">Favorite</button>
+        </div>
+        <div class="card">
+            <img src="${data.sprites.front_default}" alt="${data.name}" />
+            <p>${data.name}</p>
+            <button class="favorite-button" onclick="toggleFavorite(this)">Favorite</button>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+    <script src="../JS/favorite.js"></script>
+    <script src="../JS/cards.js"></script>
+</body>
+</html>

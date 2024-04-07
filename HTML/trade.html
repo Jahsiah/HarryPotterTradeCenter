@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/trade.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <title>Trading Center</title>
+</head>
+<body>
+    <nav class="NavBarContainer">
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">The Shop</a></li>
+                <li><a href="trade.html">Trading Center</a></li>
+                <li><a href="profile.html">Your Profil</a></li>
+                <li><a href="deck.html">Your deck</a></li>
+              </div>
+            </div>
+          </div>
+          <a class="LogoNav" href="index.html">
+            <img src="../ASSETS/HPlogo.png" alt="" class="LogoHP">
+        </a>
+        <div class="LoginNav">
+            <img src="../ASSETS/pfp.png" alt="logo" class="LogoLogin">
+        </div>
+    </nav>
+
+    <div class="trading-center">
+
+        <div class="trade-section">
+            <h2>Trade With</h2>
+            <select id="traderSelect">
+                <!-- Dynamically loaded trader options -->
+                <option value="trader1">Trader 1</option>
+                <option value="trader2">Trader 2</option>
+                <!-- More options -->
+            </select>
+            <div class="cards-container">
+                <!-- Trader's cards -->
+                <div class="card">Card A</div>
+                <div class="card">Card B</div>
+                <!-- More trader's cards -->
+            </div>
+        </div>
+
+        <div class="trade-section">
+            <h2>Your Cards</h2>
+            <div class="cards-container">
+                <!-- User's cards with checkboxes -->
+                <div class="card">
+                    <img src="card1.jpg" alt="Card 1">
+                    <input type="checkbox" name="yourCards" value="card1">
+                </div>
+                <div class="card">
+                    <img src="card2.jpg" alt="Card 2">
+                    <input type="checkbox" name="yourCards" value="card2">
+                </div>
+                <!-- More user's cards -->
+            </div>
+        </div>
+
+        <button id="tradeButton">Trade</button>
+    </div>
+</body>
+</html>

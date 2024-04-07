@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/central.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/trade.css">
+    <link rel="stylesheet" href="../CSS/CSSCENTRAL/friends.css">
+    <link rel="stylesheet" href="../CSS/CSSCENTRAL/auction.css">
+
+    <title>Central</title>
+</head>
+<body>
+    <nav class="NavBarContainer">
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>  
+              <div class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">The Shop</a></li>
+                <li><a href="trade.html">Trading Center</a></li>
+                <li><a href="profile.html">Your Profil</a></li>
+                <li><a href="deck.html">Your deck</a></li>
+              </div>
+            </div>
+          </div>
+          <a class="LogoNav" href="index.html">
+            <img src="../ASSETS/HPlogo.png" alt="" class="LogoHP">
+        </a>
+        <div class="LoginNav">
+            <img src="../ASSETS/pfp.png" alt="logo" class="LogoLogin">
+        </div>
+    </nav>
+
+    <body>
+        <div class="central-container">
+            <h1>The Central</h1>
+            <div class="tabs">
+                <button class="tab-button" onclick="openTab('friends')">Friends</button>
+                <button class="tab-button" onclick="openTab('chat')">Live Chat</button>
+                <button class="tab-button" onclick="openTab('auction')">Auction Houset</button>
+                <button class="tab-button" onclick="openTab('trade')">Trading center</button>
+            </div>
+            <div id="friends" class="tab-content">
+                <!-- Content for Friends Tab -->
+                <p>Friends list and interactions here.</p>
+                <div class="friend-list-container">
+                    <h2>My Friends</h2>
+                    <ul class="friend-list">
+                        <li class="friend">
+                            <button class="friend-name">Saykov</button>
+                            <button class="message-button">Message</button>
+                        </li>
+                        <li class="friend">
+                            <button class="friend-name">Samyaza</button>
+                            <button class="message-button">Message</button>
+                        </li>
+                        <li class="friend">
+                            <button class="friend-name">Azazel</button>
+                            <button class="message-button">Message</button>
+                        </li>
+                        <!-- More friends can be added here -->
+                    </ul>
+                </div>
+            </div>
+            <div id="chat" class="tab-content">
+                <!-- Content for Live Chat Tab -->
+                <p>Live chat interface here.</p>
+            </div>
+            <div id="auction" class="tab-content">
+                <!-- Content for Live Chat Tab -->
+                <p>LSee the live Auction.</p>
+                <div class="auction-container">
+                    <h2>Live Auctions</h2>
+                    <div class="auctions">
+                        <div class="auction">
+                            <img src="card1.jpg" alt="Card 1">
+                            <p class="card-name">Card 1</p>
+                            <p class="current-bid">Current Bid: $10</p>
+                            <button class="bid-button">Place Bid</button>
+                        </div>
+                        <div class="auction">
+                            <img src="card2.jpg" alt="Card 2">
+                            <p class="card-name">Card 2</p>
+                            <p class="current-bid">Current Bid: $15</p>
+                            <button class="bid-button">Place Bid</button>
+                        </div>
+                        <!-- More auctions can be added here -->
+                    </div>
+            
+                    <button class="start-auction-button">Start an Auction</button>
+                </div>
+            </div>
+            <div id="trade" class="tab-content">
+                <!-- Content for Live Chat Tab -->
+                <p>Trade with your friends.</p>
+                <div class="trading-center">
+
+                    <div class="trade-section">
+                        <h2>Trade With</h2>
+                        <select id="traderSelect">
+                            <!-- Dynamically loaded trader options -->
+                            <option value="trader1">Trader 1</option>
+                            <option value="trader2">Trader 2</option>
+                            <!-- More options -->
+                        </select>
+                        <div class="cards-container">
+                            <!-- Trader's cards -->
+                            <div class="card">Card A</div>
+                            <div class="card">Card B</div>
+                            <!-- More trader's cards -->
+                        </div>
+                    </div>
+            
+                    <div class="trade-section">
+                        <h2>Your Cards</h2>
+                        <div class="cards-container">
+                            <!-- User's cards with checkboxes -->
+                            <div class="card">
+                                <img src="card1.jpg" alt="Card 1">
+                                <input type="checkbox" name="yourCards" value="card1">
+                            </div>
+                            <div class="card">
+                                <img src="card2.jpg" alt="Card 2">
+                                <input type="checkbox" name="yourCards" value="card2">
+                            </div>
+                            <!-- More user's cards -->
+                        </div>
+                    </div>
+            
+                    <button id="tradeButton">Trade</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../JS/central.js"></script>
+</body>
+</html>
